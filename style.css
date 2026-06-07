@@ -1,34 +1,73 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
 
 body{
-    font-family: Arial;
-    margin: 0;
-    text-align: center;
+    background:#f4f4f4;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
 }
 
-header{
-    background: black;
-    color: white;
-    padding: 20px;
+.container{
+    width:90%;
+    max-width:500px;
+    background:white;
+    padding:20px;
+    border-radius:10px;
+    box-shadow:0 0 10px rgba(0,0,0,0.2);
 }
 
-header a{
-    color: white;
-    margin: 10px;
-    text-decoration: none;
+h1{
+    text-align:center;
+    margin-bottom:20px;
 }
 
-section{
-    padding: 30px;
+.input-box{
+    display:flex;
+    gap:10px;
 }
 
-.box{
-    border: 1px solid gray;
-    margin: 20px;
-    padding: 20px;
+input{
+    flex:1;
+    padding:10px;
+    border:1px solid #ccc;
+    border-radius:5px;
 }
 
-footer{
-    background: black;
-    color: white;
-    padding: 10px;
+button{
+    padding:10px 15px;
+    border:none;
+    background:#007bff;
+    color:white;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+button:hover{
+    opacity:0.9;
+}
+
+li{
+    list-style:none;
+    margin-top:10px;
+    padding:10px;
+    background:#eee;
+    border-radius:5px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.completed{
+    text-decoration:line-through;
+    color:gray;
+}
+
+.actions button{
+    margin-left:5px;
 }
